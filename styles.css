@@ -66,5 +66,5 @@ body {
 
 @media (max-width: 640px) {
   .hero-image { object-position: 58% 50%; }
-  .message { top: auto; right: 16px; bottom: 16px; max-width: none; }
+  .message { top: 50%; right: 16px; max-width: none; transform: translateY(-50%); }
 }
