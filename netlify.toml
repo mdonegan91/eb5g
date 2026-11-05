@@ -1,0 +1,14 @@
+[build]
+  publish = "."
+
+# Old WordPress URLs (/about, /team, /projects, /contact, ...) land on the home page.
+# Not forced, so real files such as /styles.css are still served.
+[[redirects]]
+  from = "/*"
+  to = "/"
+  status = 301
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
