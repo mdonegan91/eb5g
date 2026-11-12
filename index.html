@@ -7,21 +7,73 @@
   <meta name="description" content="Helping over 450 families reach their American dream with a 100% I-829 Approval Rate.">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="/styles.css">
+  <script src="/slideshow.js" defer></script>
 </head>
 <body>
   <header class="site-header">
-    <img class="logo" src="/assets/logo.png" width="440" height="114" alt="EB5 Global">
+    <h1 class="logo-heading"><img class="logo" src="/assets/logo.png" width="440" height="114" alt="EB5 Global"></h1>
   </header>
 
-  <main class="hero">
-    <img class="hero-image"
-         src="/assets/hero-1600.jpg"
-         srcset="/assets/hero-1200.jpg 1200w, /assets/hero-1600.jpg 1600w, /assets/hero-2400.jpg 2400w"
-         sizes="100vw"
-         width="2400" height="1386"
-         fetchpriority="high"
-         alt="Marriott Residence Inn in Portland, Oregon, at dusk">
-    <h1 class="message">Helping over 450 families reach their American dream with a 100% I-829 Approval Rate</h1>
+  <main class="hero" aria-roledescription="carousel" aria-label="EB5 Global projects">
+    <figure class="slide slide--marriott is-active" aria-roledescription="slide" aria-label="1 of 4">
+      <img class="hero-image"
+           src="/assets/hero-1600.jpg"
+           srcset="/assets/hero-1200.jpg 1200w, /assets/hero-1600.jpg 1600w, /assets/hero-2400.jpg 2400w"
+           sizes="100vw"
+           width="2400" height="1386"
+           fetchpriority="high"
+           alt="Marriott Residence Inn in Portland, Oregon, at dusk">
+      <figcaption class="message">
+        <p class="message-title">Marriott Residence Inn</p>
+        <p class="message-approvals">100% I-526 and I-829 Approvals</p>
+        <p class="message-location">Portland, Oregon</p>
+      </figcaption>
+    </figure>
+    <figure class="slide slide--hyatthouse" aria-hidden="true" aria-roledescription="slide" aria-label="2 of 4">
+      <img class="hero-image"
+           src="/assets/hyatthouse-1600.jpg"
+           srcset="/assets/hyatthouse-1200.jpg 1200w, /assets/hyatthouse-1600.jpg 1600w, /assets/hyatthouse-2400.jpg 2400w"
+           sizes="100vw"
+           width="2400" height="898" loading="lazy"
+           alt="Hyatt House hotel in Portland, Oregon, at dusk">
+      <figcaption class="message">
+        <p class="message-title">Hyatt House Hotel</p>
+        <p class="message-approvals">100% I-526 and I-829 Approvals</p>
+        <p class="message-location">Portland, Oregon</p>
+      </figcaption>
+    </figure>
+    <figure class="slide slide--sfproper" aria-hidden="true" aria-roledescription="slide" aria-label="3 of 4">
+      <img class="hero-image"
+           src="/assets/sfproper-1600.jpg"
+           srcset="/assets/sfproper-1200.jpg 1200w, /assets/sfproper-1600.jpg 1600w, /assets/sfproper-2400.jpg 2400w"
+           sizes="100vw"
+           width="2400" height="898" loading="lazy"
+           alt="San Francisco Proper Hotel with a historic streetcar passing in front">
+      <figcaption class="message">
+        <p class="message-title">San Francisco Proper Hotel</p>
+        <p class="message-approvals">100% I-526 and I-829 Approvals</p>
+        <p class="message-location">San Francisco, California</p>
+      </figcaption>
+    </figure>
+    <figure class="slide slide--lighthousepoint" aria-hidden="true" aria-roledescription="slide" aria-label="4 of 4">
+      <img class="hero-image"
+           src="/assets/lighthousepoint-1600.jpg"
+           srcset="/assets/lighthousepoint-1200.jpg 1200w, /assets/lighthousepoint-1600.jpg 1600w, /assets/lighthousepoint-2400.jpg 2400w"
+           sizes="100vw"
+           width="2400" height="898" loading="lazy"
+           alt="Rendering of the Lighthouse Point development on Staten Island, New York">
+      <figcaption class="message">
+        <p class="message-title">Lighthouse Point</p>
+        <p class="message-approvals">100% I-829 Approvals</p>
+        <p class="message-location">Staten Island, New York</p>
+      </figcaption>
+    </figure>
+    <button type="button" class="slide-arrow slide-arrow--prev" aria-label="Previous slide">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <button type="button" class="slide-arrow slide-arrow--next" aria-label="Next slide">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
   </main>
 
   <footer class="site-footer">
